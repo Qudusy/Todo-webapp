@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abdulqudusy Todo app</title>
+  <link rel="stylesheet" type="text/css" href="todo.css">
+</head>
+<body>
+  <h1>Abdulqudusy Todo WebApp</h1>
+  <div class="container" id="container">
+    <button class="add-task-button" id="openForm">Add Task</button>
+    <p class="p">Your tasks:</p>
+    <div class="tasks-container" id="tasksContainer">
+    </div>
+  </div>
+  <div class="modal-box" id="modalBox">
+    <form id="form" class="form"> 
+      <input type="text" id="taskTopicInput" class="text" placeholder="Input your task topic">
+      <input type="text" id="taskInput" class="text" placeholder="Input your task">
+      <input type="date" id="dateToDo" class="text">
+      <div class="hmmm">
+        <input type="submit" class="submit-button" id="submitButton" onclick="addTask()">
+        <button class="cancle-button" onclick="closeForm()">Close</button>
+      </div>
+    </form>
+  </div>
+  <div class="modal-box" id="editModalBox">
+    <form id="newForm" class="form"> 
+      <input type="text" id="newTaskTopicInput" class="text" placeholder="Input your new task topic">
+      <input type="text" id="newTaskInput" class="text" placeholder="Input your new task">
+      <input type="date" id="newDateToDo" class="text">
+      <div class="hmmm">
+        <input type="submit" class="submit-button" id="newSubmitButton" onclick="updateTask()">
+        <button class="cancle-button" onclick="closeForm()">Close</button>
+      </div>
+    </form>
+  </div>
+  <script type="text/javascript" src="todo.js"></script>
+</body>
+</html>
